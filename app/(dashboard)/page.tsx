@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs"
 
 export default function Home() {
   return (
-    <p>
-      This is an autheticated route
-    </p>
+    <UserButton afterSignOutUrl="/" />
   );
 }
